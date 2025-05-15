@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0'
+
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // PostgreSQL JDBC-драйвер
+    implementation 'org.postgresql:postgresql:42.7.3'
+
+    // HikariCP
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+
+    // SLF4J + SimpleLogger
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+application {
+    // Укажи свой основной класс
+    mainClass = 'ServerMain'
+}
+
+test {
+    useJUnitPlatform()
+}

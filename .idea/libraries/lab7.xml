@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lab7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/slf4j-simple-1.8.0-alpha0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HikariCP-5.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/postgresql-42.7.5-20250425.120643-1-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
